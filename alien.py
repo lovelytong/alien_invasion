@@ -21,7 +21,6 @@ class Alien(Sprite):
     self.x = float(self.rect.x)
 
 
-
   def update(self):
     """向右移动外星人"""
     self.x += (self.ai_settings.alien_speed_factor * self.ai_settings.fleet_direction)
@@ -34,6 +33,3 @@ class Alien(Sprite):
       return True
     elif self.rect.left <= 0:
       return True
-
-
-
